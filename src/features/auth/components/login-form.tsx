@@ -61,8 +61,8 @@ export function LoginForm() {
   return (
     <Card className="w-full max-w-md border-0 shadow-xl">
       <CardHeader className="space-y-1 text-center">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground text-lg font-bold">
-          OV
+        <div className="mx-auto mb-4 flex justify-center">
+          <img src="/logo.png" alt="ETHOS Logo" className="h-16 w-32 object-contain" />
         </div>
         <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
         <CardDescription>Sign in to your HRMS account</CardDescription>
