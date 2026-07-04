@@ -68,8 +68,8 @@ export function LoginForm() {
         <CardDescription>Sign in to your HRMS account</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <div className="space-y-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" suppressHydrationWarning>
+          <div className="space-y-2" suppressHydrationWarning>
             <Label htmlFor="email">Email</Label>
             <Input
               id="email"
@@ -82,7 +82,7 @@ export function LoginForm() {
               <p className="text-sm text-destructive">{errors.email.message}</p>
             )}
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2" suppressHydrationWarning>
             <Label htmlFor="password">Password</Label>
             <Input
               id="password"
