@@ -23,7 +23,7 @@ export function SalaryStructureForm({ employeeId, defaultValues, onSuccess }: Sa
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<SalaryStructureInput>({
+  } = useForm({
     resolver: zodResolver(salaryStructureSchema),
     defaultValues: {
       employeeId,

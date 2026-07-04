@@ -18,10 +18,10 @@ export function LeaveApplyForm({ onSuccess }: { onSuccess?: () => void }) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ApplyLeaveInput>({
+  } = useForm({
     resolver: zodResolver(applyLeaveSchema),
     defaultValues: {
-      leaveType: LeaveType.PAID,
+      leaveType: LeaveType.ANNUAL,
     }
   });
 

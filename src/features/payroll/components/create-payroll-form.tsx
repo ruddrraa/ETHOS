@@ -17,7 +17,7 @@ export function CreatePayrollForm({ onSuccess }: { onSuccess?: () => void }) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<CreatePayrollRunInput>({
+  } = useForm({
     resolver: zodResolver(createPayrollRunSchema),
   });
 
